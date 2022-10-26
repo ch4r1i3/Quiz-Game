@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    border: 1px solid red;
+
+    /* default font */
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: gainsboro;
+}
+
+p {
+    color: white;
+    font-size: 25px;
+}
+
+button {
+    outline: none;
+    background-color: blueviolet;
+    color: white;
+    font-size: 25px;
+}
