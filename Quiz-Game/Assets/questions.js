@@ -1,0 +1,1 @@
+if a variable is not a function and does not have var then it is?

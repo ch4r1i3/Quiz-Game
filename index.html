@@ -8,26 +8,25 @@
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
-        <!-- Main div Outter section -->
-        <div class ="top-bar">
+        <header>
+            <!-- Main div Outter section -->
+            <div class ="top-bar">
             <button>Highscores</button> 
-            <p>Timer: 00:00</p>
-        </div>
-        <!-- Inner div wich includes the header of the page -->
-        <div class="container">
-            <header class="intro"> 
+            <span>Timer: 00:00</span>
+            </div>
+        </header>
+        
+        <main>
+            <!-- Inner div wich includes the header of the page -->
+            <div id= "str-card">
                 <h1>Welcome to the Coding-Quiz</h1>
                 <p> Before to start with the quiz game, please be advice that for each incorrect answer 10 seconds will be deducted from the timer.</p>
-                <p> Let's start!</p>
-                <button class="str-btn">Start Quiz!</button>
-            </header> 
-        </div>  
-        <div>
-            <main>
-                <div class="question">
+                <button id="str-btn">Let's Start!</button>
+            </div>  
+                <div id= "question">
                     <h2>Question Here</h2>
                 </div>
-                    <div class="answers">
+                    <div id="answers">
                         <button class="btn">Answer1</button>
                         <button class="btn">Answer2</button>
                         <button class="btn">Answer3</button>
@@ -39,9 +38,7 @@
                     <p>Your Score: 00</p>
                     
                 </section>
-            </main>     
-        </div>
-
+        </main>     
     </body>
     
     
