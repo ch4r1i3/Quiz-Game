@@ -64,7 +64,6 @@ button:hover {
     font-size: 35px;
     /* text-align: center; */
     color: black;
-    border: 3px solid rgb(98, 196, 18);
 }
 #str-btn {
     padding: 15px;
