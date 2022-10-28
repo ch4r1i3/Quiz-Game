@@ -6,13 +6,15 @@
         <link rel="stylesheet" href="Quiz-Game/Assets/css/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+        <script href="Quiz-Game/script.js"></script>
+        <script href="Quiz-Game/Assets/questions.js"></script>
     </head>
     <body>
         <header>
             <!-- Main div Outter section -->
             <div class ="top-bar">
-            <button>Highscores</button> 
-            <span>Timer: 00:00</span>
+            <button id="highScore">Highscores</button> 
+            <span id="timer">Timer:</span>
             </div>
         </header>
         
@@ -22,22 +24,44 @@
                 <h1>Welcome to the Coding-Quiz</h1>
                 <p> Before to start with the quiz game, please be advice that for each incorrect answer 10 seconds will be deducted from the timer.</p>
                 <button id="str-btn">Let's Start!</button>
-            </div>  
-                <div id= "question">
-                    <h2>Question Here</h2>
-                </div>
-                    <div id="answers">
-                        <button class="btn">Answer1</button>
-                        <button class="btn">Answer2</button>
-                        <button class="btn">Answer3</button>
-                        <button class="btn">Answer4</button>
+            </div> 
+
+            <!-- Questions and answers -->
+                <div id="quiz">
+                    <div id= "question">
+                        <h2>Question Here</h2>
                     </div>
+                    <div class="responses" id="response1" onclick="selctOption(0)">
+                    Option 1
+                    </div>
+                    <div class="responses" id="response2" onclick="selctOption(1)">
+                    Option 2
+                    </div>
+                    <div class="responses" id="response3" onclick="selctOption(2)">
+                    Option 3
+                    </div>
+                    <div class="responses" id="response4" onclick="selctOption(3)">
+                    Option 4
+                    </div>
+                    <span id="answers"></span>
+                </div>
+
+                <!-- Results section -->
+                <div class="rslts">
+                    <p>here goes the result</p>
+                    <p id="answers"></p>
+                </div>
                 
-                <section class="end-part">
-                    <h2>Great Job!</h2>
-                    <p>Your Score: 00</p>
-                    
-                </section>
+                <!-- After the quiz is done -->
+                <div class="final"  id="endpart">
+                    <h3>Great Job!</h3>
+                    <p id="score">Your Score:<span id="points">0</span></p>
+                    <form>
+                        <label for="initials">Provide Initials</label>
+                        <input type="text" id="initilas" name="initials"/>
+                        <button id="submit">Submit</button>
+                    </form>
+                </div>
         </main>     
     </body>
     

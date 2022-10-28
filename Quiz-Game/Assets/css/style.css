@@ -14,7 +14,7 @@ body {
 
 p {
     color: rgb(43, 226, 198);
-    text-shadow: 1px 1px 2px rgb(234, 130, 218), 0 0 25px rgb(238, 136, 196), 0 0 5px rgb(175, 111, 234);
+    /* text-shadow: 1px 1px 2px rgb(234, 130, 218), 0 0 25px rgb(238, 136, 196), 0 0 5px rgb(175, 111, 234); */
     font-size: 25px;
     
 }
@@ -47,17 +47,18 @@ button:hover {
 }
 
 #str-card {
-    padding: 10px;
-    display:
+    padding-top: 125px;
+    display: flex;
     justify-content: center;
-    border: 3px solid red;
+    flex-wrap: wrap;
 }
 #str-card h1 {
     padding: 15px ;
     font-size: 35px;
+    text-align: center;
     color: rgb(43, 226, 198);
     text-shadow: 1px 1px 2px rgb(234, 130, 218), 0 0 25px rgb(238, 136, 196), 0 0 5px rgb(175, 111, 234);
-    border: 3px solid rgb(60, 18, 196);
+    /* border: 3px solid rgb(60, 18, 196); */
 }
 #str-card p {
     padding: 25px;
@@ -70,12 +71,26 @@ button:hover {
     font-size: 35px;
     display: flex;
     justify-content: center;
-    border: 3px solid rgb(196, 18, 193);
+    align-items: center;
 }
-#question, #answers {
+#question {
+    padding: 15px;
     display: none;
     justify-content: center;
 }
-.end-part {
+.responses {
+    padding: 15px;
     display: none;
+    justify-content: center;
+}
+.rslts {
+    padding: 15px;
+    display: none;
+    justify-content: center;
+}
+.final {
+    padding: 15px;
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }

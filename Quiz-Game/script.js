@@ -1,10 +1,10 @@
 var startCard = document.querySelector("div");
 var startBtn = document.getElementById("start");
-var timer = document.getElementById("clock");
-var container = document.getElementById("container")
+var timer = document.getElementById("timer");
+var container = document.getElementById("quiz")
 var score = 0
-var timeOver = document.getElementById("timeOver")
-var finalScore = document.getElementById("yourscore")
+var timeOver = document.getElementById("endpart")
+var finalScore = document.getElementById("points")
 var timeLeft = 90;
 var newScore = document.getElementById("olhs")
 
@@ -53,20 +53,20 @@ function loadQuestion(index) {
     options.push(objectQuestion.answer);;
     options.sort(() => Math.random() - 0.5);
     document.getElementById("question1").innerHTML = objectQuestion.question
-    document.getElementById("option1").innerHTML = options[0];
-    document.getElementById("option2").innerHTML = options[1];
-    document.getElementById("option3").innerHTML = options[2];
-    document.getElementById("option4").innerHTML = options[3];
+    document.getElementById("response1").innerHTML = options[0];
+    document.getElementById("response2").innerHTML = options[1];
+    document.getElementById("response3").innerHTML = options[2];
+    document.getElementById("response4").innerHTML = options[3];
 }
 
 async function selectOption(index) {
 let validation = options[index] === objectQuestion.answer
 if (validation) {
 
-    document.getElementById("answer").innerHTML = "Correct answer!"
+    document.getElementById("answers").innerHTML = "Correct answer!"
     score++
 } else {
-    document.getElementById("answer").innerHTML = "Wrong answer!"
+    document.getElementById("answers").innerHTML = "Wrong answer!"
     score--
     timeLeft -= 10;
     timer.textContent = timeLeft;
@@ -74,7 +74,7 @@ if (validation) {
 
 indexQuestion++;
 
-document.getElementById("finalscore").innerHTML = score;
+document.getElementById("points").innerHTML = score;
 if (indexQuestion < questions.length) {
     loadQuestion(indexQuestion);
 }
@@ -132,7 +132,7 @@ goBackBtn.addEventListener("click", function () {
 })
 
 // Highscore to record users performance
-var viewHSbtn = document.getElementById("hscores");
+var viewHSbtn = document.getElementById("highScore");
 
 viewHSbtn.addEventListener("click", function () {
     startCard.style.display = "none";
