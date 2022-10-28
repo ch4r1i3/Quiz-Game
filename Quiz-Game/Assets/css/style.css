@@ -34,6 +34,11 @@ button {
     text-shadow: 1px 1px 2px rgb(234, 130, 218), 0 0 25px rgb(238, 136, 196), 0 0 5px rgb(175, 111, 234);
     font-size: 25px;
 }
+#highScore {
+    padding: 15px;
+    float: left;
+    right: 25px;
+}
 button:hover {
     cursor: pointer;
     opacity: 45%;
@@ -46,13 +51,13 @@ button:hover {
     float: left;
 }
 
-#str-card {
+#strCard {
     padding-top: 125px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-#str-card h1 {
+#strCard h1 {
     padding: 15px ;
     font-size: 35px;
     text-align: center;
@@ -60,13 +65,13 @@ button:hover {
     text-shadow: 1px 1px 2px rgb(234, 130, 218), 0 0 25px rgb(238, 136, 196), 0 0 5px rgb(175, 111, 234);
     /* border: 3px solid rgb(60, 18, 196); */
 }
-#str-card p {
+#strCard p {
     padding: 25px;
     font-size: 35px;
     /* text-align: center; */
     color: black;
 }
-#str-btn {
+#strBtn {
     padding: 15px;
     font-size: 35px;
     display: flex;
@@ -88,7 +93,7 @@ button:hover {
     display: none;
     justify-content: center;
 }
-.final {
+#endpart {
     padding: 15px;
     display: none;
     justify-content: space-between;

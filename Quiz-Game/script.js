@@ -1,25 +1,25 @@
-var startCard = document.querySelector("div");
-var startBtn = document.getElementById("start");
+var strCard = document.querySelector("intro");
+var strBtn = document.getElementById("strBtn");
 var timer = document.getElementById("timer");
-var container = document.getElementById("quiz")
+var quiz = document.getElementById("quiz");
 var score = 0
-var timeOver = document.getElementById("endpart")
-var finalScore = document.getElementById("points")
+var endpart = document.getElementById("endpart");
+var finalScore = document.getElementById("score");
 var timeLeft = 90;
-var newScore = document.getElementById("olhs")
+var newScore = document.getElementById("olhs");
 
-//  Here is the start button function
-startBtn.addEventListener("click", countDown);
+//  Here is the start button function//
+strBtn.addEventListener("click", countDown);
 
-startBtn.addEventListener("click", function () {
-    startCard.style.display = "none";
-    container.style.display = "block";
+strBtn.addEventListener("click", function() {
+    strCard.style.display = "none";
+    quiz.style.display = "block";
 })
 
 
 function endGame() {
     if (timeLeft === 0) {
-    document.getElementById(container).style.display = "none"
+    document.getElementById(quiz).style.display = "none"
 
 } else {
     console.log("gameover")
@@ -36,7 +36,7 @@ function countDown() {
     timer.textContent = "0";
     clearInterval(timeInterval);
     container.style.display = "none";
-    timeOver.style.display = "block";
+    endpart.style.display = "block";
     }
     }, 1000);
 }
@@ -63,10 +63,10 @@ async function selectOption(index) {
 let validation = options[index] === objectQuestion.answer
 if (validation) {
 
-    document.getElementById("answers").innerHTML = "Correct answer!"
+    document.getElementById("answer").innerHTML = "Correct answer!"
     score++
 } else {
-    document.getElementById("answers").innerHTML = "Wrong answer!"
+    document.getElementById("answer").innerHTML = "Wrong answer!"
     score--
     timeLeft -= 10;
     timer.textContent = timeLeft;
@@ -122,20 +122,20 @@ addScores()
 
 //  This section sets the functionality of the finish button
 var goBackBtn = document.getElementById("goback");
-var hScore = document.getElementById("highscores")
+var hScore = document.getElementById("highScores")
 var clearBtn = document.getElementById("clear");
 
 goBackBtn.addEventListener("click", function () {
-    hScore.style.display = "none";
-    startCard.style.display = "block";
+    highScore.style.display = "none";
+    strCard.style.display = "block";
 
 })
 
 // Highscore to record users performance
-var viewHSbtn = document.getElementById("highScore");
+var viewHSbtn = document.getElementById("highScores");
 
 viewHSbtn.addEventListener("click", function () {
-    startCard.style.display = "none";
-    timeOver.style.display = "none";
-    hScore.style.display = "block";
-})
+    strCard.style.display = "none";
+    endpart.style.display = "none";
+    highScore.style.display = "block";
+});

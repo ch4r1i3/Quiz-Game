@@ -6,8 +6,8 @@
         <link rel="stylesheet" href="Quiz-Game/Assets/css/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-        <script href="Quiz-Game/script.js"></script>
-        <script href="Quiz-Game/Assets/questions.js"></script>
+        <script src="Quiz-Game/script.js"></script>
+        <script src="Quiz-Game/Assets/questions.js"></script>
     </head>
     <body>
         <header>
@@ -20,10 +20,10 @@
         
         <main>
             <!-- Inner div wich includes the header of the page -->
-            <div id= "str-card">
+            <div id= "strCard" class="intro">
                 <h1>Welcome to the Coding-Quiz</h1>
                 <p> Before to start with the quiz game, please be advice that for each incorrect answer 10 seconds will be deducted from the timer.</p>
-                <button id="str-btn">Let's Start!</button>
+                <button id="strBtn">Let's Start!</button>
             </div> 
 
             <!-- Questions and answers -->
@@ -43,7 +43,7 @@
                     <div class="responses" id="response4" onclick="selctOption(3)">
                     Option 4
                     </div>
-                    <span id="answers"></span>
+                    <span id="answer"></span>
                 </div>
 
                 <!-- Results section -->
