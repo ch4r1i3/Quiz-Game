@@ -148,16 +148,6 @@ var goBackBtn = document.getElementById("goback");
 var hScore = document.getElementById("highScores")
 var clearBtn = document.getElementById("clear");
 
-// goBackBtn.addEventListener("click", function () {
-//     highScore.style.display = "none";
-//     strCard.style.display = "block";
-
-// })
-
 // Highscore to record users performance
 var viewHSbtn = document.getElementById("highScores");
 
-// viewHSbtn.addEventListener("click", function () {
-//     strCard.style.display = "none";
-//     endpart.style.display = "none";
-//     highScore.style.display = "block";
