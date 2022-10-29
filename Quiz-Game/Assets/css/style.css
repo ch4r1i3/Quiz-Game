@@ -78,12 +78,17 @@ button:hover {
     justify-content: center;
     align-items: center;
 }
+#quiz {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
 #question {
     padding: 15px;
     display: none;
     justify-content: center;
 }
-.responses {
+.options {
     padding: 15px;
     display: none;
     justify-content: center;

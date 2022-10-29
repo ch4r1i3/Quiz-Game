@@ -6,8 +6,6 @@
         <link rel="stylesheet" href="Quiz-Game/Assets/css/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-        <script src="Quiz-Game/script.js"></script>
-        <script src="Quiz-Game/Assets/questions.js"></script>
     </head>
     <body>
         <header>
@@ -27,29 +25,28 @@
             </div> 
 
             <!-- Questions and answers -->
-                <div id="quiz">
+                <div id= "quiz">
                     <div id= "question">
                         <h2>Question Here</h2>
                     </div>
-                    <div class="responses" id="response1" onclick="selctOption(0)">
+                    <button class="options" id="response1" onclick="selctOption(0)">
                     Option 1
-                    </div>
-                    <div class="responses" id="response2" onclick="selctOption(1)">
-                    Option 2
-                    </div>
-                    <div class="responses" id="response3" onclick="selctOption(2)">
+                    </button>
+                    <button class="options" id="response2" onclick="selctOption(1)">
+                    Option 2 
+                    </button>
+                    <button class="options" id="response3" onclick="selctOption(2)">
                     Option 3
-                    </div>
-                    <div class="responses" id="response4" onclick="selctOption(3)">
-                    Option 4
-                    </div>
-                    <span id="answer"></span>
+                    </button>
+                    <button class="options" id="response4" onclick="selctOption(3)">
+                    Option 4</button>
+                    <span id= "answer"></span>
                 </div>
 
                 <!-- Results section -->
-                <div class="rslts">
+                <div class= "rslts">
                     <p>here goes the result</p>
-                    <p id="answers"></p>
+                    <p id= "answers"></p>
                 </div>
                 
                 <!-- After the quiz is done -->
@@ -62,7 +59,9 @@
                         <button id="submit">Submit</button>
                     </form>
                 </div>
-        </main>     
+        </main> 
+        <script src="Quiz-Game/script.js"></script>
+        <script src="Quiz-Game/Assets/questions.js"></script>    
     </body>
     
     
